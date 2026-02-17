@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>BIE BURGER — Cardápio Oficial</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <script type="importmap">
+      {
+        "imports": {
+          "html2canvas": "https://esm.sh/html2canvas@1.4.1",
+          "jspdf": "https://esm.sh/jspdf@2.5.1"
+        }
+      }
+    </script>
+    <script type="module" src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="app">
+      <div class="menu-wrapper" id="menu-card">
+        <header class="menu-header">
+          <img class="logo-img" src="/Bie Burger.png" alt="BIE BURGER" />
+          <div class="title-block">
+            <h1>BIE BURGER — Cardápio Oficial</h1>
+            <p class="tagline">Press Start to Eat 🎮</p>
+          </div>
+        </header>
+
+        <main class="menu-content">
+          <section class="menu-section">
+            <h2>🟢 WORLD 1 — FASE CLÁSSICA (Burger Simples)</h2>
+            <ul class="item-list">
+              <li class="menu-item">
+                <div class="item-layout">
+                  <div class="item-thumb">
+                    <img src="/Burger_do_Goku.png" alt="⭐ MARIO CLASSIC" />
+                  </div>
+                  <div class="item-body">
+                    <div class="item-main">
+                      <span class="item-name">1. ⭐ MARIO CLASSIC</span>
+                      <div class="price-group">
+                        <span class="original-price">R$ 23,90</span>
+                        <span class="item-price item-price--discount">R$ 19,90</span>
+                      </div>
+                    </div>
+                    <p class="item-desc">
+                      O herói de sempre. Simples, direto e imbatível: 100g de blend bovino in natura, cheddar cremoso e molho especial (maionese temperada com picles e cebola).
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="menu-item">
+                <div class="item-layout">
+                  <div class="item-thumb">
+                    <img src="/Burger_do_Vegeta.png" alt="🟢 LUIGI" />
+                  </div>
+                  <div class="item-body">
+                    <div class="item-main">
+                      <span class="item-name">2. 🟢 LUIGI</span>
+                      <div class="price-group">
+                        <span class="original-price">R$ 23,90</span>
+                        <span class="item-price item-price--discount">R$ 19,90</span>
+                      </div>
+                    </div>
+                    <p class="item-desc">
+                      O irmão que surpreende com um toque mais cremoso: 100g de blend bovino in natura, requeijão cremoso e molho especial (maionese temperada com picles e cebola).
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="menu-item">
+                <div class="item-layout">
+                  <div class="item-thumb">
+                    <img src="/Burger do Naruto.png" alt="👑 PRINCESS PEACH" />
+                  </div>
+                  <div class="item-body">
+                    <div class="item-main">
+                      <span class="item-name">3. 👑 PRINCESS PEACH</span>
+                      <div class="price-group">
+                        <span class="original-price">R$ 23,90</span>
+                        <span class="item-price item-price--discount">R$ 19,90</span>
+                      </div>
+                    </div>
+                    <p class="item-desc">
+                      Delicada e irresistível. O rosé é a coroa: 100g de blend bovino in natura, cheddar cremoso e molho supremo (maionese rosé).
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="menu-item">
+                <div class="item-layout">
+                  <div class="item-thumb">
+                    <img src="/Burger do Sasuke.png" alt="🌟 ROSALINA" />
+                  </div>
+                  <div class="item-body">
+                    <div class="item-main">
+                      <span class="item-name">4. 🌟 ROSALINA</span>
+                      <div class="price-group">
+                        <span class="original-price">R$ 23,90</span>
+                        <span class="item-price item-price--discount">R$ 19,90</span>
+                      </div>
+                    </div>
+                    <p class="item-desc">
+                      Suave, cremosa e de outro planeta: 100g de blend bovino in natura, requeijão cremoso e molho supremo (maionese rosé).
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <h2>🟡 WORLD 2 — FASE CROCANTE (Burger + Cebola Crispy)</h2>
+            <ul class="item-list compact">
+              <li class="menu-item">
+                <div class="item-layout">
+                  <div class="item-thumb">
+                    <img src="/Burger_do_Goku.png" alt="🔥 FIRE MARIO" />
+                  </div>
+                  <div class="item-body">
+                    <div class="item-main">
+                      <span class="item-name">5. 🔥 FIRE MARIO</span>
+                      <div class="price-group">
+                        <span class="original-price">R$ 26,90</span>
+                        <span class="item-price item-price--discount">R$ 22,90</span>
+                      </div>
+                    </div>
+                    <p class="item-desc">
+                      O clássico evoluiu: pegou a Fire Flower e ganhou o crunch com 100g de blend bovino in natura, cheddar cremoso, cebola crispy e molho especial (maionese temperada com picles e cebola).
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="item-layout">
+                  <div class="item-thumb">
+                    <img src="/Burger_do_Vegeta.png" alt="💚 FIRE LUIGI" />
+                  </div>
+                  <div class="item-body">
+                    <div class="item-main">
+                      <span class="item-name">6. 💚 FIRE LUIGI</span>
+                      <div class="price-group">
+                        <span class="original-price">R$ 26,90</span>
+                        <span class="item-price item-price--discount">R$ 22,90</span>
+                      </div>
+                    </div>
+                    <p class="item-desc">
+                      Cremosidade + crocância: o power-up do Luigi com 100g de blend bovino in natura, requeijão cremoso, cebola crispy e molho especial (maionese temperada com picles e cebola).
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <h2>🔴 WORLD 3 — BOSS LEVEL (Burger Duplo + Cebola Crispy)</h2>
+            <ul class="item-list compact">
+              <li class="menu-item featured">
+                <div class="item-layout">
+                  <div class="item-thumb">
+                    <img src="/Burger do Goku SSj 2-1.png" alt="🏆 BOWSER" />
+                  </div>
+                  <div class="item-body">
+                    <div class="item-main">
+                      <span class="item-name">7. 🏆 BOWSER</span>
+                      <div class="price-group">
+                        <span class="original-price">R$ 30,90</span>
+                        <span class="item-price item-price--discount">R$ 26,90</span>
+                      </div>
+                    </div>
+                    <p class="item-desc">
+                      Duplo, crocante e monstruoso: o chefão do cardápio com x2 100g de blend bovino in natura, cheddar cremoso, cebola crispy e molho especial (maionese temperada com picles e cebola).
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="item-layout">
+                  <div class="item-thumb">
+                    <img src="/Burger do Vegeta SSj 2.png" alt="👻 KING BOO" />
+                  </div>
+                  <div class="item-body">
+                    <div class="item-main">
+                      <span class="item-name">8. 👻 KING BOO</span>
+                      <div class="price-group">
+                        <span class="original-price">R$ 30,90</span>
+                        <span class="item-price item-price--discount">R$ 26,90</span>
+                      </div>
+                    </div>
+                    <p class="item-desc">
+                      Dobro de carne e cremosidade fantasmagórica: x2 100g de blend bovino in natura, requeijão cremoso, cebola crispy e molho especial (maionese temperada com picles e cebola).
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <h2>Combos</h2>
+            <ul class="item-list compact">
+              <li class="menu-item">
+                <div class="item-layout">
+                  <div class="item-thumb">
+                    <img src="/Combo Goku.png" alt="Combo do Reino!" />
+                  </div>
+                  <div class="item-body">
+                    <div class="item-main">
+                      <span class="item-name">13. Combo do Reino!</span>
+                      <div class="price-group">
+                        <span class="original-price">R$ 44,70</span>
+                        <span class="item-price item-price--discount">R$ 39,90</span>
+                      </div>
+                    </div>
+                    <p class="item-desc">
+                      1 x ⭐ MARIO CLASSIC + 1 x Batata (Estrelipalito ou Coin Chips) + 1 x Refrigerante (Coca Cola Lata 350ml ou Guaraná Lata 350ml).
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="menu-item featured">
+                <div class="item-layout">
+                  <div class="item-thumb">
+                    <img src="/Combo Vegeta.jpg" alt="Combo Power-Up!" />
+                  </div>
+                  <div class="item-body">
+                    <div class="item-main">
+                      <span class="item-name">14. Combo Power-Up!</span>
+                      <div class="price-group">
+                        <span class="original-price">R$ 44,70</span>
+                        <span class="item-price item-price--discount">R$ 39,90</span>
+                      </div>
+                    </div>
+                    <p class="item-desc">
+                      1 x 🟢 LUIGI + 1 x Batata (Estrelipalito ou Coin Chips) + 1 x Refrigerante (Coca Cola Lata 350ml ou Guaraná Lata 350ml).
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <section class="menu-section side-column">
+            <div>
+              <h2>Refrigerantes</h2>
+              <ul class="item-list compact">
+                <li class="menu-item">
+                  <div class="item-layout">
+                    <div class="item-thumb">
+                      <img src="/coca_lata.png" alt="Coca Cola Lata 350ml" />
+                    </div>
+                    <div class="item-body">
+                      <div class="item-main">
+                        <span class="item-name">9. Coca Cola Lata 350ml</span>
+                        <div class="price-group">
+                          <span class="original-price">R$ 7,90</span>
+                          <span class="item-price item-price--discount">R$ 5,90</span>
+                        </div>
+                      </div>
+                      <p class="item-desc">
+                        Clássico geladinho para acompanhar qualquer fase do seu pedido.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="item-layout">
+                    <div class="item-thumb">
+                      <img src="/guaranalata.png" alt="Guaraná Lata 350ml" />
+                    </div>
+                    <div class="item-body">
+                      <div class="item-main">
+                        <span class="item-name">10. Guaraná Lata 350ml</span>
+                        <div class="price-group">
+                          <span class="original-price">R$ 7,90</span>
+                          <span class="item-price item-price--discount">R$ 5,90</span>
+                        </div>
+                      </div>
+                      <p class="item-desc">
+                        Refrescante, doce na medida e perfeito para resetar o paladar.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h2>Acompanhamentos</h2>
+              <ul class="item-list compact">
+                <li class="menu-item">
+                  <div class="item-layout">
+                    <div class="item-thumb">
+                      <img src="/Batata Sayajins.png" alt="Estrelipalito" />
+                    </div>
+                    <div class="item-body">
+                      <div class="item-main">
+                        <span class="item-name">11. Estrelipalito</span>
+                        <div class="price-group">
+                          <span class="original-price">R$ 12,90</span>
+                          <span class="item-price item-price--discount">R$ 10,90</span>
+                        </div>
+                      </div>
+                      <p class="item-desc">
+                        Batata palito douradinha e crocante, em formato para você zerar o jogo de fome.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="item-layout">
+                    <div class="item-thumb">
+                      <img src="/Chips do Poder.png" alt="Coin Chips" />
+                    </div>
+                    <div class="item-body">
+                      <div class="item-main">
+                        <span class="item-name">12. Coin Chips</span>
+                        <div class="price-group">
+                          <span class="original-price">R$ 12,90</span>
+                          <span class="item-price item-price--discount">R$ 10,90</span>
+                        </div>
+                      </div>
+                      <p class="item-desc">
+                        Chips fininhas e crocantes, cada mordida é como pegar mais uma moeda.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h2>🎮 Legenda do Cardápio</h2>
+              <ul class="item-list compact">
+                <li class="menu-item">
+                  <div class="item-body">
+                    <p class="item-desc">
+                      <b>⭐</b> — Mais vendido<br />
+                      <b>🔥</b> — Favorito da casa<br />
+                      <b>🏆</b> — Para os famintos<br />
+                      <b>🟢</b> — Entrada perfeita
+                    </p>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="item-body">
+                    <p class="item-desc">
+                      <b>WORLD 1</b> → Burgers de entrada (simples, sem cebola crispy).<br />
+                      <b>WORLD 2</b> → Upgrade com crocância.<br />
+                      <b>WORLD 3</b> → Smash duplo — o desafio final. Suba de level nos pedidos e escolha sua fase favorita!
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </main>
+
+        
+      </div>
+    </div>
+  </body>
+</html>
+
